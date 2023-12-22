@@ -1,0 +1,26 @@
+# Project Name
+
+## Description
+This project aims to provide a hands-on experience with Aspire and Semantic Kernel. It serves as a learning platform to explore the capabilities and features of these technologies.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+1. Clone the repository.
+2. Install the required dependencies.
+3. Configure the project settings.
+
+## Usage
+1. Run the project.
+2. Explore the different functionalities.
+3. Experiment with Aspire and Semantic Kernel.
+
+## Contributing
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
