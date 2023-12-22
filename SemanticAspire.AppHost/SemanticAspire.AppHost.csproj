@@ -15,7 +15,10 @@
   <ItemGroup>
     <ProjectReference Include="..\SemanticAspire.ApiService\SemanticAspire.ApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.ArgumentsApiService\SemanticAspire.ArgumentsApiService.csproj" />
+    <ProjectReference Include="..\SemanticAspire.BingAndGooglePluginsApiService\SemanticAspire.BingAndGooglePluginsApiService.csproj" />
+    <ProjectReference Include="..\SemanticAspire.InlineFunctionDefinitionApiService\SemanticAspire.InlineFunctionDefinitionApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.MethodFunctionsApiService\SemanticAspire.MethodFunctionsApiService.csproj" />
+    <ProjectReference Include="..\SemanticAspire.TemplateLanguageApiService\SemanticAspire.TemplateLanguageApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.Web\SemanticAspire.Web.csproj" />
   </ItemGroup>
 

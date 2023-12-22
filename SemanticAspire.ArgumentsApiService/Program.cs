@@ -23,27 +23,31 @@ app.UseHttpsRedirection();
 var kernel = new Kernel();
 var textPlugin = kernel.ImportPluginFromType<StaticTextPlugin>();
 
-var arguments = new KernelArguments()
+app.MapGet("/executefunctionmethod1", async (string textToAppendTo, DateTime valueOfTheDayToAppend) =>
 {
-    ["input"] = "Today is: ",
-    ["day"] = DateTimeOffset.Now.ToString("dddd", CultureInfo.CurrentCulture)
-};
-
-app.MapGet("/executefunctionmethod1", async () =>
-{
-    return await kernel.InvokeAsync<string>(textPlugin["AppendDay"], arguments);
+    return await kernel.InvokeAsync<string>(textPlugin["AppendDay"], new KernelArguments()
+    {
+        ["input"] = textToAppendTo,
+        ["day"] = valueOfTheDayToAppend.ToString("dddd", CultureInfo.CurrentCulture)
+    });
 })
 .WithName("executefunctionmethod1")
 .WithOpenApi();
 
 
-app.MapGet("/executefunctionmethod2", async () =>
+app.MapGet("/executefunctionmethod2", async (string textToAppendTo, DateTime valueOfTheDayToAppend) =>
 {
-    var results = await kernel.InvokeAsync(textPlugin["AppendDay"], arguments);
+    // throws a error. system.type cannot be deserialized
+    var results = await kernel.InvokeAsync(textPlugin["AppendDay"], new KernelArguments()
+    {
+        ["input"] = textToAppendTo,
+        ["day"] = valueOfTheDayToAppend.ToString("dddd", CultureInfo.CurrentCulture)
+    });
 
     return results.Function;
 })
 .WithName("executefunctionmethod2")
+.WithDescription("executes function that return meta data")
 .WithOpenApi();
 
 app.Run();

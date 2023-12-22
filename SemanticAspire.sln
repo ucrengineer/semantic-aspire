@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticAspire.AppHost", "SemanticAspire.AppHost\SemanticAspire.AppHost.csproj", "{7E5FA3B3-4184-4B67-8B40-E35B7217BFDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.AppHost", "SemanticAspire.AppHost\SemanticAspire.AppHost.csproj", "{7E5FA3B3-4184-4B67-8B40-E35B7217BFDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.ServiceDefaults", "SemanticAspire.ServiceDefaults\SemanticAspire.ServiceDefaults.csproj", "{5CF1B1B5-3063-496A-9B4A-3FA75FE050C9}"
 EndProject
@@ -19,7 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.ArgumentsApiService", "SemanticAspire.ArgumentsApiService\SemanticAspire.ArgumentsApiService.csproj", "{66E01471-1406-4B6C-97B2-747C1DD6ED98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticAspire.Shared", "SemanticAspire.Shared\SemanticAspire.Shared.csproj", "{B58971B8-2F7F-489B-B079-A21B2A371594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.Shared", "SemanticAspire.Shared\SemanticAspire.Shared.csproj", "{B58971B8-2F7F-489B-B079-A21B2A371594}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.InlineFunctionDefinitionApiService", "SemanticAspire.InlineFunctionDefinitionApiService\SemanticAspire.InlineFunctionDefinitionApiService.csproj", "{AB79C232-95B7-4952-BD11-B86B9A9FA8B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.TemplateLanguageApiService", "SemanticAspire.TemplateLanguageApiService\SemanticAspire.TemplateLanguageApiService.csproj", "{0382560B-1CAC-42E1-8C6F-A6B9C4BE0E45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.BingAndGooglePluginsApiService", "SemanticAspire.BingAndGooglePluginsApiService\SemanticAspire.BingAndGooglePluginsApiService.csproj", "{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +61,18 @@ Global
 		{B58971B8-2F7F-489B-B079-A21B2A371594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B58971B8-2F7F-489B-B079-A21B2A371594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B58971B8-2F7F-489B-B079-A21B2A371594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB79C232-95B7-4952-BD11-B86B9A9FA8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB79C232-95B7-4952-BD11-B86B9A9FA8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB79C232-95B7-4952-BD11-B86B9A9FA8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB79C232-95B7-4952-BD11-B86B9A9FA8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0382560B-1CAC-42E1-8C6F-A6B9C4BE0E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0382560B-1CAC-42E1-8C6F-A6B9C4BE0E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0382560B-1CAC-42E1-8C6F-A6B9C4BE0E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0382560B-1CAC-42E1-8C6F-A6B9C4BE0E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

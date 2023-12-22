@@ -1,0 +1,6 @@
+@SemanticAspire.TemplateLanguageApiService_HostAddress = http://localhost:5007
+
+GET {{SemanticAspire.TemplateLanguageApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@SemanticAspire.BingAndGooglePluginsApiService_HostAddress = http://localhost:5056
+
+GET {{SemanticAspire.BingAndGooglePluginsApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

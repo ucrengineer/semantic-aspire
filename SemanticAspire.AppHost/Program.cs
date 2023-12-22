@@ -10,6 +10,12 @@ builder.AddProject<Projects.SemanticAspire_Web>("webfrontend")
 
 builder.AddProject<Projects.SemanticAspire_MethodFunctionsApiService>("methodfunctionsapiservice");
 
-builder.AddProject<Projects.SemanticAspire_ArgumentsApiService>("semanticaspire.argumentsapiservice");
+builder.AddProject<Projects.SemanticAspire_ArgumentsApiService>("argumentsapiservice");
+
+builder.AddProject<Projects.SemanticAspire_InlineFunctionDefinitionApiService>("inlinefunctiondefinitionapiservice");
+
+builder.AddProject<Projects.SemanticAspire_TemplateLanguageApiService>("templatelanguageapiservice");
+
+builder.AddProject<Projects.SemanticAspire_BingAndGooglePluginsApiService>("bingandgooglepluginsapiservice");
 
 builder.Build().Run();

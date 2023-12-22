@@ -1,0 +1,6 @@
+@SemanticAspire.InlineFunctionDefinitionApiService_HostAddress = http://localhost:5084
+
+GET {{SemanticAspire.InlineFunctionDefinitionApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
