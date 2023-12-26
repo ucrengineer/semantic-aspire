@@ -1,0 +1,6 @@
+@SemanticAspire.SemanticMemoryApiService_HostAddress = http://localhost:5232
+
+GET {{SemanticAspire.SemanticMemoryApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

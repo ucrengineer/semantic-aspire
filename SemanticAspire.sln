@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.TemplateLang
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.BingAndGooglePluginsApiService", "SemanticAspire.BingAndGooglePluginsApiService\SemanticAspire.BingAndGooglePluginsApiService.csproj", "{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.ConversationSummaryPluginApiService", "SemanticAspire.ConversationSummaryPluginApiService\SemanticAspire.ConversationSummaryPluginApiService.csproj", "{E248F0E7-7238-4875-BE1E-F1EE5C09403A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.SemanticMemoryApiService", "SemanticAspire.SemanticMemoryApiService\SemanticAspire.SemanticMemoryApiService.csproj", "{FA950000-411E-4EF2-9A7B-C12734DD28CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,14 @@ Global
 		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B7A1D05-E883-4E28-9B90-9DBA2B6F34E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E248F0E7-7238-4875-BE1E-F1EE5C09403A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E248F0E7-7238-4875-BE1E-F1EE5C09403A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E248F0E7-7238-4875-BE1E-F1EE5C09403A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E248F0E7-7238-4875-BE1E-F1EE5C09403A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA950000-411E-4EF2-9A7B-C12734DD28CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA950000-411E-4EF2-9A7B-C12734DD28CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA950000-411E-4EF2-9A7B-C12734DD28CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA950000-411E-4EF2-9A7B-C12734DD28CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

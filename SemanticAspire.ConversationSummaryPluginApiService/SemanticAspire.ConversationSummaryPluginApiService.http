@@ -1,0 +1,6 @@
+@SemanticAspire.ConversationSummaryPluginApiService_HostAddress = http://localhost:5230
+
+GET {{SemanticAspire.ConversationSummaryPluginApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
