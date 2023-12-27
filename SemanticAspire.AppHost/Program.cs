@@ -31,4 +31,6 @@ builder.AddProject<Projects.SemanticAspire_ConversationSummaryPluginApiService>(
 builder.AddProject<Projects.SemanticAspire_SemanticMemoryApiService>("semanticmemoryapiservice")
     .WithReference(db);
 
+builder.AddProject<Projects.SemanticAspire_DallEApiService>("dalleapiservice");
+
 builder.Build().Run();

@@ -35,13 +35,6 @@ var bingConfig = app.Services.GetRequiredService<IOptions<BingConfig>>();
 
 var googleConfig = app.Services.GetRequiredService<IOptions<GoogleConfig>>();
 
-ArgumentException.ThrowIfNullOrEmpty(openAiConfig.Value.ApiKey, nameof(openAiConfig.Value.ApiKey));
-ArgumentException.ThrowIfNullOrEmpty(openAiConfig.Value.ChatModelId, nameof(openAiConfig.Value.ChatModelId));
-ArgumentException.ThrowIfNullOrEmpty(bingConfig.Value.ApiKey, nameof(bingConfig.Value.ApiKey));
-ArgumentException.ThrowIfNullOrEmpty(googleConfig.Value.ApiKey, nameof(googleConfig.Value.ApiKey));
-ArgumentException.ThrowIfNullOrEmpty(googleConfig.Value.SearchEngineId, nameof(googleConfig.Value.SearchEngineId));
-
-
 var kernel = Kernel.CreateBuilder()
     .AddOpenAIChatCompletion(
     modelId: openAiConfig.Value.ChatModelId,

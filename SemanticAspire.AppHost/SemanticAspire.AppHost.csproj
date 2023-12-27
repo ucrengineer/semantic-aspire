@@ -17,6 +17,7 @@
     <ProjectReference Include="..\SemanticAspire.ArgumentsApiService\SemanticAspire.ArgumentsApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.BingAndGooglePluginsApiService\SemanticAspire.BingAndGooglePluginsApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.ConversationSummaryPluginApiService\SemanticAspire.ConversationSummaryPluginApiService.csproj" />
+    <ProjectReference Include="..\SemanticAspire.DallEApiService\SemanticAspire.DallEApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.InlineFunctionDefinitionApiService\SemanticAspire.InlineFunctionDefinitionApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.MethodFunctionsApiService\SemanticAspire.MethodFunctionsApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.SemanticMemoryApiService\SemanticAspire.SemanticMemoryApiService.csproj" />
