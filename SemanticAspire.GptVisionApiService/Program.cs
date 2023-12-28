@@ -1,3 +1,4 @@
+using Azure.Core;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using SemanticAspire.Shared;
@@ -30,11 +31,26 @@ app.UseHttpsRedirection();
 
 app.MapGet("/example/gptvision", async (string chartImageUrl, IChatCompletionService _chatCompletionService) =>
 {
-    var chatHistory = new ChatHistory("You are a chartist.");
+    var chatHistory = new ChatHistory();
+    chatHistory.AddSystemMessage("You are a professional chartist.");
+    var prompt = @$"
+            Instructions: What is the stock pattern shown in this image?
+            If you don't know the intent, don't guess; instead respond with Unknown.
+
+            Choices: triangle, rectangle, head and shoulders, inverted head and shoulders, Unknown.
+            Bonus: You'll get $20 if you get this right.
+
+            ## Examples
+            User Input: image-url
+            Pattern: triangle
+
+            User Input: image-url
+            Pattern: rectangle
+            ## End Examples";
+    chatHistory.AddSystemMessage(prompt);
 
     chatHistory.AddUserMessage(new ChatMessageContentItemCollection
     {
-        new TextContent("What stock pattern is being shown in this image?"),
         new ImageContent(new Uri(chartImageUrl))
     });
 
