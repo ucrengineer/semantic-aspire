@@ -33,4 +33,8 @@ builder.AddProject<Projects.SemanticAspire_SemanticMemoryApiService>("semanticme
 
 builder.AddProject<Projects.SemanticAspire_DallEApiService>("dalleapiservice");
 
+builder.AddProject<Projects.SemanticAspire_DIContainerApiService>("dicontainerapiservice");
+
+builder.AddProject<Projects.SemanticAspire_GptVisionApiService>("gptvisionapiservice");
+
 builder.Build().Run();

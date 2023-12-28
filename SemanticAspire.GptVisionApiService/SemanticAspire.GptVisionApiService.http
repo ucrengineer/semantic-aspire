@@ -1,0 +1,6 @@
+@SemanticAspire.GptVisionApiService_HostAddress = http://localhost:5001
+
+GET {{SemanticAspire.GptVisionApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

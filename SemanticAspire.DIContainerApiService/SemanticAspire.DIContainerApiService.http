@@ -1,0 +1,6 @@
+@SemanticAspire.DIContainerApiService_HostAddress = http://localhost:5025
+
+GET {{SemanticAspire.DIContainerApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

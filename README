@@ -3,6 +3,8 @@
 ## Description
 This project aims to provide a hands-on experience with Aspire and Semantic Kernel. It serves as a learning platform to explore the capabilities and features of these technologies.
 
+Core examples are from https://github.dev/microsoft/semantic-kernel/blob/main/dotnet/samples/KernelSyntaxExamples/
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)

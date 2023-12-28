@@ -25,7 +25,7 @@ builder.Services.Configure<OpenAIConfig>
     (builder.Configuration.GetSection(nameof(OpenAIConfig)));
 var app = builder.Build();
 
-var db = app.Services.GetRequiredService<ApplicationDbContext>();
+var db = app.Services.CreateScope().ServiceProvider.GetRequiredService<ApplicationDbContext>();
 db.Database.EnsureCreated();
 
 app.MapDefaultEndpoints();
