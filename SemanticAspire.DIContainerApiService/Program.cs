@@ -16,7 +16,7 @@ builder.Services.AddOpenAIChatCompletion(
     builder.Configuration["OpenAIConfig:ChatModelId"] ?? throw new ArgumentNullException("ChatModelId"),
     builder.Configuration["OpenAIConfig:ApiKey"] ?? throw new ArgumentNullException("apikey"));
 
-builder.Services.AddSingleton((x) =>
+builder.Services.AddSingleton<Kernel>((x) =>
 {
     var filePath = Path.Combine("..", "SemanticAspire.Shared", "Plugins", "TemplatesAndSettings", "SummarizePlugin");
 

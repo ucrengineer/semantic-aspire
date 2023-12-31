@@ -1,4 +1,3 @@
-using Azure.Core;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using SemanticAspire.Shared;

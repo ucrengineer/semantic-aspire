@@ -37,4 +37,6 @@ builder.AddProject<Projects.SemanticAspire_DIContainerApiService>("dicontainerap
 
 builder.AddProject<Projects.SemanticAspire_GptVisionApiService>("gptvisionapiservice");
 
+builder.AddProject<Projects.SemanticAspire_AgentsApiService>("agentsapiservice");
+
 builder.Build().Run();

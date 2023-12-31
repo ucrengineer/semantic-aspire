@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SemanticAspire.AgentsApiService\SemanticAspire.AgentsApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.ApiService\SemanticAspire.ApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.ArgumentsApiService\SemanticAspire.ArgumentsApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.BingAndGooglePluginsApiService\SemanticAspire.BingAndGooglePluginsApiService.csproj" />
