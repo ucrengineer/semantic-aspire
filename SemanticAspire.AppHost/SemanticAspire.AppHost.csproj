@@ -1,18 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
-
   <ItemGroup>
+    <ProjectReference Include="..\SemanticAspire.AgentCollaborationApiService\SemanticAspire.AgentCollaborationApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.AgentsApiService\SemanticAspire.AgentsApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.ApiService\SemanticAspire.ApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.ArgumentsApiService\SemanticAspire.ArgumentsApiService.csproj" />
@@ -27,9 +25,10 @@
     <ProjectReference Include="..\SemanticAspire.TemplateLanguageApiService\SemanticAspire.TemplateLanguageApiService.csproj" />
     <ProjectReference Include="..\SemanticAspire.Web\SemanticAspire.Web.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.1.23557.2" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.1" />
+    <PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="8.0.1" />
   </ItemGroup>
-
 </Project>

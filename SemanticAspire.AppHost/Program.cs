@@ -1,8 +1,8 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var cache = builder.AddRedisContainer("cache");
+var cache = builder.AddRedis("cache");
 
-var db = builder.AddPostgresContainer("postgres")
+var db = builder.AddPostgres("postgres")
         .WithAnnotation(new ContainerImageAnnotation
         {
             Image = "ankane/pgvector",
@@ -38,5 +38,7 @@ builder.AddProject<Projects.SemanticAspire_DIContainerApiService>("dicontainerap
 builder.AddProject<Projects.SemanticAspire_GptVisionApiService>("gptvisionapiservice");
 
 builder.AddProject<Projects.SemanticAspire_AgentsApiService>("agentsapiservice");
+
+builder.AddProject<Projects.SemanticAspire_AgentCollaborationApiService>("agentcollaborationapiservice");
 
 builder.Build().Run();

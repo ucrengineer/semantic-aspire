@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.GptVisionApi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.AgentsApiService", "SemanticAspire.AgentsApiService\SemanticAspire.AgentsApiService.csproj", "{A4D68018-D747-4831-9964-4E05CB50C98E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticAspire.AgentCollaborationApiService", "SemanticAspire.AgentCollaborationApiService\SemanticAspire.AgentCollaborationApiService.csproj", "{8A76FC27-8AB7-47E0-BB76-ADDE41306EBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{A4D68018-D747-4831-9964-4E05CB50C98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D68018-D747-4831-9964-4E05CB50C98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D68018-D747-4831-9964-4E05CB50C98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A76FC27-8AB7-47E0-BB76-ADDE41306EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A76FC27-8AB7-47E0-BB76-ADDE41306EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A76FC27-8AB7-47E0-BB76-ADDE41306EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A76FC27-8AB7-47E0-BB76-ADDE41306EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
